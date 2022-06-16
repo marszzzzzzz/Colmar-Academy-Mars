@@ -7,102 +7,8 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
       integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
       crossorigin="anonymous"/>
+<link rel="stylesheet" href="style.css">
       <style type="text/css">
-
-.container{
-
-padding: 0;
-margin: 0;
-
-}
-.col-6{
-padding: 0;
-margin: 0;
-
-}
-.card{
-    padding: 0;
-margin: 0;
-}
-.pleft{
-    padding-left: 12px;
-}
-.pright{
-    padding-right: 12px;
-}
-.ptop{
-    padding-top: 32px;
-}
-.pbottom{
-    padding-bottom: 32px;
-}
-
-.smpleft{
-    padding-left: 16px;
-}
-.smpright{
-    padding-right: 16px;
-}
-
-.smptop{
-    padding-top: 16px;
-}
-.smpbottom{
-    padding-bottom: 24px;
-}
-
-
-.pall-info{
-    padding: 16px;
-
-}
-.navbar li {
-        margin-left : 8px;
-        margin-right : 8px;
-        padding: 0;
-    }
-.images{
-    width: 100%;
-    height: auto;
-}
-
-.images-info{
-    width: 900px;
-    height: auto;
-}
-.video{
-    width: 100%;
-    height: auto;
-}
-.bar{
-    color: white;
-    background-color:rgb(76 73 69);
-    padding: 8px 100px;
-   border: 0ch;
-}
-.card-text{
-    font-size: small;
-    padding-left: 16px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-}
-.card-image-top
-{
-    height: auto;
-}
-.card-title{
-    padding-top: 16px;
-    padding-left: 16px;
-}
-.card-label{
-    align-items: center;
-    width: 50%;
-    margin: 16px 4px 16px 16px;
-    display: block;
-    position: relative;
-    border: 1 solid white;
-    background-color: blue;
-}
 
 @media (min-width: 990px) {
     
@@ -114,8 +20,17 @@ margin: 0;
         flex-wrap: wrap;
     }
     video {
+        justify-content: center;
+        margin: auto;
         padding-bottom: 24px;
     }
+    .bar{
+        justify-content: center;
+    }
+    .row{
+        justify-content: center;
+    }
+
 }
 @media (max-width: 990px) {
     .labalmax {
@@ -160,13 +75,13 @@ margin: 0;
                 <div class="col-sm-3 flex-wrap">
                 <img src="images/ic-logo.svg" alt="ic-logo">
             </div>
-            <div class="col-sm-3 flex-wrap"">
+            <div class="col-sm-3 flex-wrap">
                 <img src="images/ic-on-campus.svg" alt="ic-on-campus">
             </div>
-            <div class="col-sm-3 flex-wrap"">
+            <div class="col-sm-3 flex-wrap">
                 <img src="images/ic-online.svg" alt="ic-online">
             </div>
-            <div class="col-sm-3 flex-wrap"">
+            <div class="col-sm-3 flex-wrap">
                 <img src="images/ic-login.svg" alt="ic-login">
             </div>
         </div>
@@ -176,7 +91,7 @@ margin: 0;
 <!-- First container started -->
 <div class="container flex-wrap bg-primary p-2 bg-opacity-25 pbottom pleft pright ptop">
     <div class="row labalmax">
-        <div class="col-md-7 pright pleft ">
+        <div class="col-md-7 pright pleft">
             <img class="images ptop pbottom pleft" src="images/banner.jpg" alt="banner">
         </div>  
         <div class="col-md-5 pright pleft">
@@ -209,7 +124,7 @@ margin: 0;
                     Lorem ipsum dolor sit amet,
                      consectetur adipiscing elit.</h5>
             </div>
-            <div class="row">
+            <div class="row" style="justify-content: center!important">
                 <span class="bar pbottom smpright smpleft">Start here</span>
             </div>
             
@@ -247,7 +162,7 @@ margin: 0;
                     <div class="col-md-8">
                         <h5>Orientation date</h5>
                         <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-                        <p>Read more</p>
+                        <p class="link-primary">Read more</p>
 
                     </div>
                 </div>
@@ -261,15 +176,16 @@ margin: 0;
                     <div class="col-md-8 col-sm-8">
                         <h5>Our campus</h5>
                         <p>Find which campus is close by you</p>
-                        <p>Read more</p>
+                        <p href="#" class="link-primary">Read more</p>
                     </div>
                 </div>
                 <div class="row pall-info p-2">
                     <img class="images labalmin" src="images/information-guest-lecture-mobile.jpg" alt="info-m">
                     <div class="col-sm-8 labalmin">
                         <h5>Our guest lecture</h5>
-                        <p>Join a keynote with Oliver Sack
-about music in medical treatment</p>
+                        <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+                        <p href="#" class="link-primary">Read more</p>
+
                 </div>
                 <div class="row pall-info bg-primary p-2 bg-opacity-25 labalmax">
                     <div class="col-md-4 labalmax">
@@ -279,7 +195,7 @@ about music in medical treatment</p>
                         <h5>Our guest lecture</h5>
                         <p>Join a keynote with Oliver Sack
 about music in medical treatment</p>
-                        <p>Read more</p>
+                        <p href="#" class="link-primary">Read more</p>
                     </div>
                     </div>
                 </div>
@@ -372,22 +288,22 @@ about music in medical treatment</p>
     </div>
     <div class="row labalmin" style="justify-content: center;">
         <div class="row card-label">
-        <h5 class="card-title  pall-info">Software engineering</h5>
+        <h5 class="pall-info">Software engineering</h5>
         </div>
         <div class="row card-label">
-        <h5 class="card-title  pall-info">Computer art</h5>            
+        <h5 class=" pall-info">Computer art</h5>            
         </div>
         <div class="row card-label">
-        <h5 class="card-title pall-info">Design</h5>            
+        <h5 class="pall-info">Design</h5>            
         </div>
         <div class="row card-label">
-        <h5 class="card-title pall-info">Data</h5>            
+        <h5 class="pall-info">Data</h5>            
         </div>
         <div class="row card-label">
-        <h5 class="card-title pall-info">Business</h5>            
+        <h5 class="pall-info">Business</h5>            
         </div>
         <div class="row card-label">
-        <h5 class="card-title pall-info">Marketing</h5>        
+        <h5 class="pall-info">Marketing</h5>        
     </div>
     </div>
     </div>

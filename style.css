@@ -1,0 +1,94 @@
+.container{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    
+    }
+    .col-6{
+    padding: 0;
+    margin: 0;
+    
+    }
+    .card{
+        padding: 0;
+    margin: 0;
+    }
+    .pleft{
+        padding-left: 12px;
+    }
+    .pright{
+        padding-right: 12px;
+    }
+    .ptop{
+        padding-top: 32px;
+    }
+    .pbottom{
+        padding-bottom: 32px;
+    }
+    
+    .smpleft{
+        padding-left: 16px;
+    }
+    .smpright{
+        padding-right: 16px;
+    }
+    
+    .smptop{
+        padding-top: 16px;
+    }
+    .smpbottom{
+        padding-bottom: 24px;
+    }
+    
+    
+    .pall-info{
+        padding: 16px;
+    
+    }
+    .navbar li {
+            margin-left : 8px;
+            margin-right : 8px;
+            padding: 0;
+        }
+    .images{
+        width: 100%;
+        height: auto;
+    }
+    
+    .images-info{
+        width: 900px;
+        height: auto;
+    }
+    .video{
+        width: 100%;
+        height: auto;
+    }
+    .bar{
+        color: white;
+        background-color:rgb(76 73 69);
+        padding: 8px 100px;
+       border: 0ch;
+    }
+    .card-text{
+        font-size: small;
+        padding-left: 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .card-image-top
+    {
+        height: auto;
+    }
+    .card-title{
+        padding-top: 16px;
+        padding-left: 16px;
+    }
+    .card-label{
+        align-items: center;
+        width: 90%;
+        margin: 4px 16px 4px 16px;
+        display: block;
+        position: relative;
+        border: 1 solid white;
+        background-color: blue;
+    }
