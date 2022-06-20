@@ -48,7 +48,7 @@
     <div class="container" style="height: 64px;">
     <div class="col-md-12 labalmax">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand pleft pright" style="height: 32px; font-size:large; font-weight:bold "#">
+        <a class="navbar-brand pleft pright" style="height: 32px; font-size:large; font-weight:bold;display:flexbox!important; ">
             <img src="images/ic-logo.svg" alt="ic-logo">
             COLMAR<span style="font-weight:initial ; color:gray">ACADEMY</span></a>
     
@@ -72,24 +72,24 @@
     </div>
     <div class="col-sm-12 labalmin">
         <nav class="navbar labalmin navbar-expand-lg navbar-light bg-light">
-                <div class="col-sm-3 flex-wrap">
+            <!-- <div class="col-sm-3 flex-wrap"> -->
                 <img src="images/ic-logo.svg" alt="ic-logo">
-            </div>
-            <div class="col-sm-3 flex-wrap">
+            <!-- </div> -->
+            <!-- <div class="col-sm-3 flex-wrap"> -->
                 <img src="images/ic-on-campus.svg" alt="ic-on-campus">
-            </div>
-            <div class="col-sm-3 flex-wrap">
+            <!-- </div>
+            <div class="col-sm-3 flex-wrap"> -->
                 <img src="images/ic-online.svg" alt="ic-online">
-            </div>
-            <div class="col-sm-3 flex-wrap">
+            <!-- </div>
+            <div class="col-sm-3 flex-wrap"> -->
                 <img src="images/ic-login.svg" alt="ic-login">
-            </div>
+            <!-- </div> -->
         </div>
     </div>
     </div>
 <!-- nav bar ended -->
 <!-- First container started -->
-<div class="container flex-wrap bg-primary p-2 bg-opacity-25 pbottom pleft pright ptop">
+<div class="container flex-wrap bg-color p-2 bg-opacity-25 pbottom pleft pright ptop">
     <div class="row labalmax">
         <div class="col-md-7 pright pleft">
             <img class="images ptop pbottom pleft" src="images/banner.jpg" alt="banner">
@@ -187,7 +187,7 @@
                         <p href="#" class="link-primary">Read more</p>
 
                 </div>
-                <div class="row pall-info bg-primary p-2 bg-opacity-25 labalmax">
+                <div class="row pall-info bg-color p-2 bg-opacity-25 labalmax">
                     <div class="col-md-4 labalmax">
                     <img class="images labalmax" src="images/information-guest-lecture.jpg" alt="info-main">
                     </div>
@@ -205,56 +205,54 @@ about music in medical treatment</p>
 </div>
 <!-- Second container ended -->
 <!-- Thrid container started -->
-<div class="container bg-primary p-2 bg-opacity-25" style="padding: 32px 54px 16px 54px;">
+<div class="container bg-color p-2 bg-opacity-25" style="padding: 32px 54px 16px 54px;">
     <div class="row">
         <div class="col-md-12 text-center">
             <h3 class="ptop pbottom" style="font-size:2.5rem;font-weight: bold">Start Learning</h3>
         </div>
     </div>
-    <div class="row labalmax">
-        <div class="col-md-4 pall-info">
+    <div class="row justify-content-between">
+        <div class="d-none d-md-block col-md-4 pall-info">
 
             <div class="card " style="width: 18rem; ">
                 <img src="images/course-software.jpg" class="card-img-top" alt="software">
                 <div class="card-body">
                   <h5 class="card-title">Software engineering</h5>
                   <p class="card-text">COURSES</p>
-                  <p class="card-text">Web devdelopment, Mobile
+                  <p class="card-text" id="accordion1" >Web devdelopment, Mobile
                     Development, ¡OT, APIs</p>
                 </div>
               </div>
         </div>
-        <div class="col-md-4 pall-info">
+        <div class="d-none d-md-block col-md-4 pall-info">
             
 <div class="card" style="width: 18rem; ">
     <img src="images/course-computer-art.jpg" class="card-img-top" alt="computer-art">
     <div class="card-body">
       <h5 class="card-title">Computer art</h5>
       <p class="card-text">COURSES</p>
-      <p class="card-text" style="padding: bottom 24px;">Imaging & Design, Web Design,
+      <p class="card-text" id="accordion2" style="padding: bottom 24px;" >Imaging & Design, Web Design,
         Motion Graphics & Visual Effects,Computer Animation</p>
     </div>
   </div>
         </div>
-        <div class="col-md-4 pall-info">
+        <div class="d-none d-md-block col-md-4 pall-info">
             
             <div class="card" style="width: 18rem; ">
-                <img src="images/course-design.jpg" class="card-img-top" alt="design">
+                <img src="images/course-design.jpg" class="card-img-top"  alt="design">
                 <div class="card-body">
                   <h5 class="card-title">Design</h5>
                   <p class="card-text">COURSES</p>
-                <p class="card-text">User Experience Design, User
+                  <div id="collapseTwo" class="collapse" data-parent="#accordion"></div>
+                <p class="card-text" id="accordion3">User Experience Design, User
                     Research, Visual Design</p>
                 </div>
             </div>
 
         </div>
-
-    </div>
-    <div class="row labalmax">
-        <div class="col-md-4 pall-info">
+        <div class="d-none d-md-block col-md-4 pall-info">
             <div class="card" style="width: 18rem; ">
-                <img src="images/course-data.jpg" class="card-img-top" alt="course-data">
+                <img src="images/course-data.jpg" class="card-img-top" id="collapseFour" alt="course-data">
                 <div class="card-body">
                   <h5 class="card-title ">Data</h5>
                   <p class="card-text">COURSES</p>
@@ -263,9 +261,9 @@ about music in medical treatment</p>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 pall-info">
+        <div class="d-none d-md-block col-md-4 pall-info">
             <div class="card" style="width: 18rem; ">
-                <img src="images/course-business.jpg" class="card-img-top" alt="course-business">
+                <img src="images/course-business.jpg" class="card-img-top" id="collapseFive" alt="course-business">
                 <div class="card-body">
                   <h5 class="card-title ">Business</h5>
                   <p class="card-text">COURSES</p>
@@ -274,9 +272,9 @@ about music in medical treatment</p>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 pall-info">
+        <div class="d-none d-md-block col-md-4 pall-info">
             <div class="card" style="width: 18rem; ">
-                <img src="images/course-marketing.jpg" class="card-img-top" alt="marketing">
+                <img src="images/course-marketing.jpg" class="card-img-top"  alt="marketing">
                 <div class="card-body">
                   <h5 class="card-title">Marketing</h5>
                   <p class="card-text">COURSES</p>
@@ -285,25 +283,72 @@ about music in medical treatment</p>
                 </div>
             </div>
         </div>
+        <div class="d-none d-sm-block d-xs-block d-md-none pleft" id="accordion" style="width:90% ;padding-left:20px;">
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link collapseOne" data-toggle="collapse" href="#collapseOne">
+            Software engineering
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+            Web devdelopment, Mobile
+            Development, ¡OT, APIs
+        </div>
+      </div>
     </div>
-    <div class="row labalmin" style="justify-content: center;">
-        <div class="row card-label">
-        <h5 class="pall-info">Software engineering</h5>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+            Computer art
+      </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+            Imaging & Design, Web Design, Motion Graphics & Visual Effects,Computer Animation        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+            Design        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+            User Experience Design, User Research, Visual Design        </div>
+      </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+          <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+            Data        </a>
         </div>
-        <div class="row card-label">
-        <h5 class=" pall-info">Computer art</h5>            
+        <div id="collapseFour" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            Data Science, Big Data, SQL, Data Visualization        </div>
         </div>
-        <div class="row card-label">
-        <h5 class="pall-info">Design</h5>            
+    </div>
+        <div class="card">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                Business        </a>
+            </div>
+            <div id="collapseFive" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                Product Development, Business Development, Startup        </div>
+            </div>
         </div>
-        <div class="row card-label">
-        <h5 class="pall-info">Data</h5>            
+        <div class="card">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                Marketing       </a>
+            </div>
+            <div id="collapseSix" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                Analytics, Content Marketing, Mobile Marketing       </div>
+            </div>
         </div>
-        <div class="row card-label">
-        <h5 class="pall-info">Business</h5>            
-        </div>
-        <div class="row card-label">
-        <h5 class="pall-info">Marketing</h5>        
+  </div>
     </div>
     </div>
     </div>
@@ -322,7 +367,7 @@ about music in medical treatment</p>
 
         </div>
         <div class="col-md-5 labalmax">
-            <div class="row pall-info bg-primary ">
+            <div class="row pall-info bg-color ">
                 <div class="col-md-4">
                     <img class="images" src="images/thesis-fisma.jpg" alt="fisma">
 
@@ -373,5 +418,8 @@ about music in medical treatment</p>
     </div>
 </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
